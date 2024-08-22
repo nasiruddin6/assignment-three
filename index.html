@@ -1,33 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment-three</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment-three</title>
 
-    <!-- Google Fonts -->
+  <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-<!-- daisy UI -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-    </style>
+  </style>
+
+
+  <!--Tailwind CSS  -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            btn_bg: '#ABEF5F',
+            banner_btn: '#ABEF5F80'
+
+          }
+        }
+      }
+    }
+  </script>
+
+
+
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
-   <header>
-    <h1>how are you</h1>
-   </header> 
-   <main>
+  <header class="w-11/12 mx-auto md:w-10/12" >
 
-   </main>
+    <!-- Navbar -->
+    <div class=" navbar border bg-base-100">
 
-   <footer></footer>
+      <div class="navbar-start">
+
+        <i class="fa-solid fa-arrow-right -rotate-45 rounded-full  bg-btn_bg p-2"></i>
+        <a class="btn btn-ghost text-[25px] font-bold ">Rinterio</a>
+
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="font-bold text-[20px]"><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+
+        <div class=" mr-4 md:flex hidden lg:flex">
+          <!-- search icon -->
+
+          <i class="border rounded-full text-gray-500 fa-solid p-2 fa-magnifying-glass mr-5"></i>
+
+          <i class="border text-gray-500 p-2 rounded-full fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <div class="btn bg-btn_bg hidden md: lg:flex rounded-full">
+          <a class="font-bold">Book Consult</a>
+          <i class="fa-solid bg-black  rounded-full p-2 fa-arrow-right -rotate-45 text-white"></i>
+        </div>
+
+      </div>
+
+      <!-- 3 dot-->
+
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-2 p-2 shadow">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Banner-image-header -->
+    <div>
+      <div class="card bg-base-100 w-11/12 shadow-xl">
+        <figure class="px-10 pt-10 ">
+          <img src="./assets/banner.png" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title  md:[text-45px] text-[24px]  md:text-[40px] font-bold leading-none">A barn house of this design has a striking appearance</h2>
+          
+          <p >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+          <div class="btn  w-full md:w-[220px] bg-banner_btn rounded-full">
+            <a>View Ditels</a>
+            <i class="fa-solid  fa-arrow-right -rotate-45 text-black bg-btn_bg rounded-box p-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <main>
+
+  </main>
+
+  <footer></footer>
 </body>
+
 </html>
